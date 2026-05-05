@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EMI Loan Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <button onclick="showPage('home')">Home</button>
+  <button onclick="showPage('calculator')">EMI Calculator</button>
+  <button onclick="showPage('contact')">Contact</button>
+</nav>
+
+<section id="home" class="page">
+  <div class="home-box">
+    <h1>💳 EMI Loan Tracker</h1>
+
+    <p class="big-text">
+      Manage your loans smarter and easier with our EMI Loan Tracker.
+    </p>
+
+    <p>
+      EMI (Equated Monthly Installment) is the fixed amount you pay every month 
+      to repay your loan. It includes both the principal and interest.
+    </p>
+
+    <p>This app helps you:</p>
+
+    <ul>
+      <li>✔ Calculate EMI easily</li>
+      <li>✔ Track multiple customers</li>
+      <li>✔ Monitor loan progress</li>
+      <li>✔ Manage like a To-Do system</li>
+    </ul>
+
+    <p>Go to EMI Calculator to get started 🚀</p>
+  </div>
+</section>
+
+<section id="calculator" class="page">
+  <h1>💳 EMI Loan Tracker</h1>
+
+  <div id="formContainer">
+    <h2>Add New Customer</h2>
+    <form id="customerForm">
+      <input type="text" id="name" placeholder="Customer Name" required>
+      <input type="number" id="loanAmount" placeholder="Loan Amount (₹)" required>
+      <input type="number" id="interestRate" placeholder="Interest Rate (%)" required>
+      <input type="number" id="months" placeholder="Time (Months)" required>
+      <input type="number" id="paidAmount" placeholder="Already Paid (₹)" value="0">
+      <button type="submit">Add Customer</button>
+    </form>
+  </div>
+
+  <div id="holderContainer"></div>
+  <div id="details"></div>
+</section>
+
+<section id="contact" class="page">
+  <h1>Contact & Feedback</h1>
+
+  <div class="contact-box">
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Share your experience..."></textarea>
+
+      <p>Rate this app:</p>
+      ⭐ ⭐ ⭐ ⭐ 
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p class="contact-info">
+      📧 Email: support@emiapp.com <br>
+      📞 Phone: +91 9876543210
+    </p>
+  </div>
+</section>
+
+<script src="style.js"></script>
+</body>
+</html>
